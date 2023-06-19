@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<segments>
+    <segment id="UNH" name="messageHeader" desc="">
+        <data_element id="0062" required="true" name="messageID" usage="C" desc="Identifiant unique du message dans l’échange" type="an" maxlength="14"/>
+        <composite_data_element id="_0001" name="messageHeaderTechnical" desc="">
+        <data_element id="0065" name="messageType" usage="C" desc="" type="an" maxlength="6"/>
+        <data_element id="0052" name="messageVersion" usage="C" desc="" type="an" maxlength="3"/>
+        <data_element id="0054" name="messageRelease" usage="C" desc="" type="an" maxlength="3"/>
+        <data_element id="0051" name="messageOrg" usage="C" desc="" type="an" maxlength="2"/>
+        <data_element id="0057" name="messageAgency" usage="C" desc="Remise entre transporteurs" type="an" maxlength="6"/>
+        </composite_data_element>
+        <data_element id="0068" name="messageRef" usage="C" desc="A imprimer" type="an" maxlength="35"/>
+    </segment>
+    <segment id="BGM" name="bgm" desc="">
+        <data_element id="1004" name="nref" usage="C" desc="N° propre à l'émetteur" type="an" maxlength="35"/>
+    </segment>
+    <segment id="NAD" name="nameAndAddress" desc="Name and Address">
+        <data_element id="3035" name="quality" usage="C" desc="" type="an" maxlength="3"/>
+        <composite_data_element id="_0002" name="emitter" desc="">
+            <data_element id="3039" name="emitSIRET" usage="C" desc="" type="an" maxlength="17"/>
+            <data_element id="1131" name="IDLCode" usage="C" desc="" type="an" maxlength="3"/>
+        </composite_data_element>
+        <data_element id="3036" name="emmetName" usage="C" desc="" type="an" maxlength="35"/>
+    </segment>
+    <segment id="DTM" name="Date" desc="Date">
+        <data_element id="2005" name="event" usage="C" desc="Date de départ" type="an" maxlength="3"/>
+        <data_element id="2001" name="date" desc="AAMMJJ" usage="C" type="n" maxlength="6"/>
+        <data_element id="2002" name="hour" desc="HHMM" usage="C" type="n" maxlength="4"/>
+    </segment>
+</segments>

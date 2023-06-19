@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<data_elements>
+    <data_element id="3035">
+        <code id="FW" title="Qualifiant de l'emetteur" desc="Commissionnaire de transport (apporteur)"/>
+        <code id="DP" title="Qualifiant de l'emetteur" desc="Agent livreur"/>
+    </data_element>
+    <data_element id="2005">
+        <code id="DEP" title="Date de départ" desc="Date de départ "/>
+        <code id="AAR" title="Date d’arrivée" desc="Date prévisionnelle d’arrivée du camion"/>
+    </data_element>
+</data_elements>
