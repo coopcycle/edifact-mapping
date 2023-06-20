@@ -23,8 +23,26 @@
         <data_element id="3036" name="emmetName" usage="C" desc="" type="an" maxlength="35"/>
     </segment>
     <segment id="DTM" name="Date" desc="Date">
-        <data_element id="2005" name="event" usage="C" desc="Date de départ" type="an" maxlength="3"/>
+        <data_element id="2005" name="event" usage="C" desc="" type="an" maxlength="3"/>
         <data_element id="2001" name="date" desc="AAMMJJ" usage="C" type="n" maxlength="6"/>
         <data_element id="2002" name="hour" desc="HHMM" usage="C" type="n" maxlength="4"/>
+    </segment>
+    <segment id="TSR" name="Type de produit de transport" desc="Produit de transport">
+        <data_element id="4751" name="Type de produit de transport" desc="Produit de transport" usage="B" type="an" maxlength="3"/>
+        <data_element id="3759" name="Type de prestation" desc="" usage="B" type="an" maxlength="1"/>
+        <data_element id="4219" name="Régime" desc="" usage="B" type="n" maxlength="1"/>
+    </segment>
+    <segment id="CAG" name="Port" desc="Port">
+        <data_element id="4237" name="Port" desc="Port payé (P) ou En service (F)" usage="C" type="a" maxlength="1"/>
+        <data_element id="5851" name="Exemption de TVA" desc="Exemption (E) ou taxable (V)" usage="C" type="a" maxlength="1"/>
+        <data_element id="4053" name="Condition de livraison" desc="Incoterms" usage="B" type="an" maxlength="3"/>
+        <data_element id="3018" name="Incoterms : Lieu" desc="Lieu sur lequel porte l’Incoterm" usage="B" type="an" maxlength="32"/>
+        <data_element id="1296" name="N° de contrat permanent de transport" desc="N° de compte de facturation du commissionnaire (apporteur) chez l'agent livreur ou centre de consolidation." usage="B" type="an" maxlength="17"/>
+        <data_element id="1850" name="Attribution de la taxe transport" desc="N° de compte analytique (du commissionnaire) à utiliser par l’agent livreur" usage="B" type="an" maxlength="17"/>
+    </segment>
+    <segment id="TDT" name="Mode de transport" desc="Mode de transport">
+        <data_element id="8067" name="Code" desc="code mode de transport" usage="C" type="an" maxlength="3"/>
+        <data_element id="8066" name="Mode de transport" desc="Libellé" usage="B" type="an" maxlength="17"/>
+        <data_element id="8212" name="Identification du moyen de transport" desc="Immatriculation du camion" usage="B" type="an" maxlength="17"/>
     </segment>
 </segments>

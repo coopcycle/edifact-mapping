@@ -3,9 +3,33 @@
     <data_element id="3035">
         <code id="FW" title="Qualifiant de l'emetteur" desc="Commissionnaire de transport (apporteur)"/>
         <code id="DP" title="Qualifiant de l'emetteur" desc="Agent livreur"/>
+        <code id="N1" title="Qualifiant de l'emetteur" desc="Intervenant 1 - destinataire en copie de la consignation"/>
+        <code id="N2" title="Qualifiant de l'emetteur" desc="Intervenant 2 - destinataire en copie de la consignation"/>
     </data_element>
     <data_element id="2005">
         <code id="DEP" title="Date de départ" desc="Date de départ "/>
         <code id="AAR" title="Date d’arrivée" desc="Date prévisionnelle d’arrivée du camion"/>
+    </data_element>
+    <data_element id="3759">
+        <code id="D" title="Type de prestation" desc="A livrer"/>
+        <code id="K" title="Type de prestation" desc="A conserver à disposition"/>
+        <code id="I" title="Type de prestation" desc="A installer"/>
+    </data_element>
+    <data_element id="4219">
+        <code id="1" title="Régime" desc="Express"/>
+        <code id="2" title="Régime" desc="Rapide"/>
+        <code id="3" title="Régime" desc="Normal"/>
+        <code id="4" title="Régime" desc="Monocolis"/>
+    </data_element>
+    <data_element id="4237">
+        <code id="P" title="Port" desc="Port Payé"/>
+        <code id="F" title="Port" desc="En service"/>
+    </data_element>
+    <data_element id="5851">
+        <code id="E" title="Exemption de TVA" desc="Exemption"/>
+        <code id="V" title="Exemption de TVA" desc="Taxable"/>
+    </data_element>
+    <data_element id="8067">
+        <code id="3" title="Mode de transport" desc="Route"/>
     </data_element>
 </data_elements>
