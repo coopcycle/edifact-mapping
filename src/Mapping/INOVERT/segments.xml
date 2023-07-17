@@ -45,4 +45,43 @@
         <data_element id="8066" name="Mode de transport" desc="Libellé" usage="B" type="an" maxlength="17"/>
         <data_element id="8212" name="Identification du moyen de transport" desc="Immatriculation du camion" usage="B" type="an" maxlength="17"/>
     </segment>
+    <segment id="DOC" name="Document" desc="Document">
+        <data_element id="1001" name="Code" desc="Code de document" usage="C" type="an" maxlength="3"/>
+        <data_element id="1791" name="Situation du document" desc="Situation du document" usage="C" type="a" maxlength="3"/>
+        <data_element id="1004" name="N°" desc="N° de document" usage="C" type="an" maxlength="35"/>
+        <data_element id="1788" name="Origine du document" desc="Origine du document" usage="B" type="an" maxlength="35"/>
+    </segment>
+    <segment id="EQD" name="Qualifiant du moyen de transport" desc="A ne pas mettre si absence de SEL">
+        <data_element id="8005" name="Code" desc="Code qualifiant du moyen de transport" usage="B" type="an" maxlength="3"/>
+    </segment>
+    <segment id="SEL" name="Plomb" desc="Plomb">
+        <data_element id="9308" name="N° de plomb" desc="N° de plomb" usage="B" type="an" maxlength="10"/>
+        <data_element id="9303" name="Intervenant qui a appose le plomb" desc="Remettant" usage="B" type="an" maxlength="3"/>
+        <data_element id="9302" name="Nom du prepose" desc="Nom du prepose" usage="B" type="an" maxlength="17"/>
+    </segment>
+    <segment id="UNS" name="Identification de la section" desc="Identification de la section">
+        <data_element id="0081" name="Code" desc="Code section" usage="C" type="a" maxlength="1"/>
+    </segment>
+    <segment id="RFF" name="Reference" desc="Reference">
+        <data_element id="1153" name="Code" desc="Code reference" usage="C" type="an" maxlength="3"/>
+        <data_element id="1154" name="N° de la reference" desc="N° de reference du commissionnaire" usage="C" type="an" maxlength="35"/>
+    </segment>
+    <segment id="GID" name="Groupe de produit" desc="Groupe de produit">
+        <data_element id="7224" name="Nombre" desc="Nombre" usage="B" type="n" maxlength="6"/>
+        <data_element id="7065" name="Specifiant du nombre" desc="Specifiant du nombre" usage="B" type="an" maxlength="4"/>
+    </segment>
+    <segment id="MSE" name="Mesure" desc="Mesure">
+        <data_element id="6799" name="Qualifiant de la mesure" desc="Qualifiant de la mesure" usage="C" type="an" maxlength="3"/>
+        <data_element id="6314" name="Valeur de la mesure" desc="Valeur de la mesure" usage="C" type="n" maxlength="15"/>
+        <data_element id="6410" name="Spécifiant de l'unité de mesure" desc="Spécifiant de l'unité de mesure" usage="C" type="an" maxlength="3"/>
+    </segment>
+    <segment id="CTA" name="Moyen de communication" desc="Moyen de communication">
+        <data_element id="3412" name="Service ou employé" desc="Service ou employé" usage="B" type="an" maxlength="35"/>
+        <data_element id="3148" name="N° de communication" desc="N° de communication" usage="B" type="an" maxlength="512"/>
+        <data_element id="3153" name="Mode de communication" desc="Voir répertoire" usage="B" type="an" maxlength="3"/>
+    </segment>
+    <segment id="LOC" name="Localisation" desc="Localisation">
+        <data_element id="3227" name="Qualifiant de la localisation" desc="Qualifiant de la localisation" usage="B" type="an" maxlength="3"/>
+        <data_element id="3224" name="Nom de la localisation" desc="Nom de la localisation" usage="B" type="an" maxlength="17"/>
+    </segment>
 </segments>
