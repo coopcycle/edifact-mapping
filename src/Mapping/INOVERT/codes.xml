@@ -6,10 +6,15 @@
         <code id="N1" title="Qualifiant de l'emetteur" desc="Intervenant 1 - destinataire en copie de la consignation"/>
         <code id="N2" title="Qualifiant de l'emetteur" desc="Intervenant 2 - destinataire en copie de la consignation"/>
         <code id="CN" title="Qualifiant de l'emetteur" desc="Destinataire"/>
+        <code id="CO" title="Qualifiant de l'emetteur" desc="Expéditeur/donneur d'ordre"/>
     </data_element>
     <data_element id="2005">
         <code id="DEP" title="Date de départ" desc="Date de départ "/>
         <code id="AAR" title="Date d’arrivée" desc="Date prévisionnelle d’arrivée du camion"/>
+        <code id="DAD" title="Date de livraison demandée" desc="Date de livraison demandée"/>
+        <code id="DFD" title="Début de période pour la livraison" desc="Début de période pour la livraison"/>
+        <code id="DLD" title="Fin de période pour la livraison" desc="Fin de période pour la livraison"/>
+        <code id="DES" title="Date d'expédition" desc="Date d'expédition"/>
     </data_element>
     <data_element id="3759">
         <code id="D" title="Type de prestation" desc="A livrer"/>
@@ -44,11 +49,41 @@
         <code id="CGM" title="Qualifiant de la mesure" desc="Volume de la consignation"/>
         <code id="AAW" title="Qualifiant de la mesure" desc="Volume d'alcool"/>
         <code id="ABQ" title="Qualifiant de la mesure" desc="Volume d'alcool pur"/>
+        <code id="AAD" title="Qualifiant de la mesure" desc="Poids brut total"/>
+        <code id="AAC" title="Qualifiant de la mesure" desc="Quantité nette totale"/>
+        <code id="EQ" title="Qualifiant de la mesure" desc="Quantité Exceptée"/>
+        <code id="LQ" title="Qualifiant de la mesure" desc="Quantité Limitée"/>
     </data_element>
     <data_element id="6410">
         <code id="KG" title="Spécifiant de l'unité de mesure" desc="Kg"/>
         <code id="MTQ" title="Spécifiant de l'unité de mesure" desc="Mètre cube"/>
         <code id="LTR" title="Spécifiant de l'unité de mesure" desc="Litre"/>
         <code id="CTL" title="Spécifiant de l'unité de mesure" desc="Centilitre"/>
+    </data_element>
+    <data_element id="3227">
+        <code id="PDO" title="Qualifiant d'une localisation" desc="Lieu de livraison"/>
+        <code id="COP" title="Qualifiant d'une localisation" desc="Lieu de chargement"/>
+    </data_element>
+    <data_element id="0077">
+        <code id="DEL" title="Référence du texte" desc="Instruction de livraison à imprimer sur le document de livraison"/>
+        <code id="REM" title="Référence du texte" desc="Remarques"/>
+        <code id="AAD" title="Référence du texte" desc="Nom technique"/>
+        <code id="AAC" title="Référence du texte" desc="Information complémentaire"/>
+        <code id="REG" title="Référence du texte" desc="Tunnel"/>
+        <code id="PKG" title="Référence du texte" desc="Type de conditionnement"/>
+        <code id="ACF" title="Référence du texte" desc="Déchet"/>
+    </data_element>
+    <data_element id="8724">
+        <code id="1" title="Groupe d'emballage" desc="Très dangereux"/>
+        <code id="2" title="Groupe d'emballage" desc="Moyennement dangereux"/>
+        <code id="3" title="Groupe d'emballage" desc="Peu dangereux"/>
+    </data_element>
+    <data_element id="8719">
+        <code id="DE" title="Autorisation de transporter" desc="Polluant Environnement"/>
+        <code id="MP" title="Autorisation de transporter" desc="Polluant Marin"/>
+    </data_element>
+    <data_element id="3155">
+        <code id="FT" title="Qualifiant du numéro de communication" desc="Adresse de l'URL de l'image"/>
+        <code id="TT" title="Qualifiant du numéro de communication" desc="La ligne de texte à imprimer"/>
     </data_element>
 </data_elements>

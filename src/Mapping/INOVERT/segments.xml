@@ -31,6 +31,7 @@
         <data_element id="4751" name="Type de produit de transport" desc="Produit de transport" usage="B" type="an" maxlength="3"/>
         <data_element id="3759" name="Type de prestation" desc="" usage="B" type="an" maxlength="1"/>
         <data_element id="4219" name="Régime" desc="" usage="B" type="n" maxlength="1"/>
+        <data_element id="7787" name="Nature de la cargaison" desc="" usage="B" type="an" maxlength="6"/>
     </segment>
     <segment id="CAG" name="Port" desc="Port">
         <data_element id="4237" name="Port" desc="Port payé (P) ou En service (F)" usage="C" type="a" maxlength="1"/>
@@ -83,5 +84,45 @@
     <segment id="LOC" name="Localisation" desc="Localisation">
         <data_element id="3227" name="Qualifiant de la localisation" desc="Qualifiant de la localisation" usage="B" type="an" maxlength="3"/>
         <data_element id="3224" name="Nom de la localisation" desc="Nom de la localisation" usage="B" type="an" maxlength="17"/>
+    </segment>
+    <segment id="VAL" name="Valeur" desc="Valeur">
+        <data_element id="5297" name="Qualifiant du montant" desc="Qualifiant du montant" usage="B" type="an" maxlength="3"/>
+        <data_element id="5004" name="Montant" desc="Montant" usage="B" type="n" maxlength="15"/>
+        <data_element id="6345" name="Code de devise" desc="Code de devise" usage="B" type="an" maxlength="3"/>
+    </segment>
+    <segment id="TXT" name="Champ texte" desc="Champ texte">
+        <data_element id="0077" name="Référence du texte" desc="Référence du texte" usage="B" type="an" maxlength="3"/>
+        <data_element id="0078" name="Texte" desc="Texte" usage="B" type="an" maxlength="70"/>
+    </segment>
+    <segment id="GDS" name="Description des marchandises" desc="Description des marchandises">
+        <data_element id="8753" name="Code" desc="Code" usage="B" type="an" maxlength="3"/>
+        <data_element id="8755" name="Code matière dangereuse" desc="Code matière dangereuse" usage="B" type="an" maxlength="7"/>
+        <data_element id="7124" name="N° UNDG" desc="N° UNDG" usage="B" type="n" maxlength="4"/>
+        <data_element id="8724" name="Groupe d'emballage" desc="Groupe d'emballage" usage="B" type="n" maxlength="1"/>
+        <data_element id="8712" name="Marquage étiquettes de Mat. Danger." desc="Marquage étiquettes de Mat. Danger." usage="B" type="an" maxlength="4"/>
+        <data_element id="8712" name="Marquage étiquettes de Mat. Danger." desc="Marquage étiquettes de Mat. Danger." usage="B" type="an" maxlength="4"/>
+        <data_element id="8712" name="Marquage étiquettes de Mat. Danger." desc="Marquage étiquettes de Mat. Danger." usage="B" type="an" maxlength="4"/>
+        <data_element id="8712" name="Marquage étiquettes de Mat. Danger." desc="Marquage étiquettes de Mat. Danger." usage="B" type="an" maxlength="4"/>
+        <data_element id="8717" name="Catégorie du moyen de transport (code)" desc="Catégorie du moyen de transport (code)" usage="B" type="an" maxlength="2"/>
+        <data_element id="8719" name="Autorisation de transporter" desc="Autorisation de transporter" usage="B" type="an" maxlength="2"/>
+    </segment>
+    <segment id="PCI" name="Manutention" desc="Manutention">
+        <data_element id="4233" name="Qualifiant du manutention" desc="Qualifiant du manutention" usage="C" type="an" maxlength="2"/>
+        <data_element id="7102" name="Marques et numéros" desc="Marques et numéro" usage="B" type="an" maxlength="35"/>
+        <data_element id="1154" name="Numéro de référence" desc="Numéro de référence" usage="B" type="an" maxlength="35"/>
+        <data_element id="1153" name="Qualifiant de la référence" desc="Qualifiant de la référence" usage="B" type="an" maxlength="3"/>
+    </segment>
+    <segment id="GIN" name="N° identification" desc="N° identification unité de manutention">
+        <data_element id="7405" name="Qualifiant de l'identification" desc="Qualifiant de l'identification" usage="C" type="an" maxlength="3"/>
+        <data_element id="C208/1-7402" name="N° d'identification" desc="N° identification" usage="C" type="an" maxlength="35"/>
+        <data_element id="C208/2-7402" name="N° d'identification" desc="N° identification" usage="B" type="an" maxlength="35"/>
+    </segment>
+    <segment id="COM" name="N° de communication" desc="N° de communication">
+        <data_element id="3148" name="Numéro de communication" desc="N° de communication" usage="B" type="an" maxlength="512"/>
+        <data_element id="3155" name="Qualifiant de la communication" desc="Qualifiant de la communication" usage="B" type="an" maxlength="3"/>
+    </segment>
+    <segment id="UNT" name="Nombre de segment" desc="Nombre de segment">
+        <data_element id="0074" name="Nombre de segment" desc="Nombre de segment" usage="C" type="n" maxlength="6"/>
+        <data_element id="0062" name="Numéro de référence du message" desc="Numéro de référence du message" usage="C" type="an" maxlength="14"/>
     </segment>
 </segments>
