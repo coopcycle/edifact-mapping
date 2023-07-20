@@ -16,11 +16,16 @@
     </segment>
     <segment id="NAD" name="nameAndAddress" desc="Name and Address">
         <data_element id="3035" name="quality" usage="C" desc="" type="an" maxlength="3"/>
-        <composite_data_element id="_0002" name="emitter" desc="">
-            <data_element id="3039" name="emitSIRET" usage="C" desc="" type="an" maxlength="17"/>
+        <composite_data_element id="_0002" name="organisationg" desc="">
+            <data_element id="3039" name="SIRET" usage="C" desc="" type="an" maxlength="17"/>
             <data_element id="1131" name="IDLCode" usage="C" desc="" type="an" maxlength="3"/>
         </composite_data_element>
         <data_element id="3036" name="emmetName" usage="C" desc="" type="an" maxlength="35"/>
+        <data_element id="3042" name="streetnameFirstZone" usage="C" desc="" type="an" maxlength="35"/>
+        <data_element id="3042" name="streetnameSecondZone" usage="B" desc="" type="an" maxlength="35"/>
+        <data_element id="3164" name="city" usage="C" desc="" type="an" maxlength="35"/>
+        <data_element id="3251" name="zipcode" usage="C" desc="" type="an" maxlength="9"/>
+        <data_element id="3207" name="country" usage="C" desc="" type="an" maxlength="2"/>
     </segment>
     <segment id="DTM" name="Date" desc="Date">
         <data_element id="2005" name="event" usage="C" desc="" type="an" maxlength="3"/>
@@ -68,13 +73,29 @@
         <data_element id="1154" name="referenceID" desc="N° de reference du commissionnaire" usage="C" type="an" maxlength="35"/>
     </segment>
     <segment id="GID" name="productGroup" desc="Groupe de produit">
-        <data_element id="7224" name="quantity" desc="Nombre" usage="B" type="n" maxlength="6"/>
-        <data_element id="7065" name="unit" desc="Specifiant du nombre" usage="B" type="an" maxlength="4"/>
+        <composite_data_element id="_0002" name="quantity1" desc="">
+            <data_element id="7224" name="quantity" desc="Nombre" usage="B" type="n" maxlength="6"/>
+            <data_element id="7065" name="unit" desc="Specifiant du nombre" usage="B" type="an" maxlength="4"/>
+        </composite_data_element>
+        <composite_data_element id="_0002" name="quantity2" desc="">
+            <data_element id="7224" name="quantity" desc="Nombre" usage="B" type="n" maxlength="6"/>
+            <data_element id="7065" name="unit" desc="Specifiant du nombre" usage="B" type="an" maxlength="4"/>
+        </composite_data_element>
+        <composite_data_element id="_0002" name="quantity3" desc="">
+            <data_element id="7224" name="quantity" desc="Nombre" usage="B" type="n" maxlength="6"/>
+            <data_element id="7065" name="unit" desc="Specifiant du nombre" usage="B" type="an" maxlength="4"/>
+        </composite_data_element>
+        <composite_data_element id="_0002" name="quantity4" desc="">
+            <data_element id="7224" name="quantity" desc="Nombre" usage="B" type="n" maxlength="6"/>
+            <data_element id="7065" name="unit" desc="Specifiant du nombre" usage="B" type="an" maxlength="4"/>
+        </composite_data_element>
     </segment>
     <segment id="MSE" name="measurement" desc="Mesure">
         <data_element id="6799" name="quantityType" desc="Qualifiant de la mesure" usage="C" type="an" maxlength="3"/>
-        <data_element id="6314" name="quantity" desc="Valeur de la mesure" usage="C" type="n" maxlength="15"/>
-        <data_element id="6410" name="unit" desc="Spécifiant de l'unité de mesure" usage="C" type="an" maxlength="3"/>
+        <composite_data_element id="_0002" name="quantity">
+            <data_element id="6314" name="quantity" desc="Valeur de la mesure" usage="C" type="n" maxlength="15"/>
+            <data_element id="6410" name="unit" desc="Spécifiant de l'unité de mesure" usage="C" type="an" maxlength="3"/>
+        </composite_data_element>
     </segment>
     <segment id="CTA" name="communicationMeans" desc="Moyen de communication">
         <data_element id="3412" name="contactType" desc="Service ou employé" usage="B" type="an" maxlength="35"/>
