@@ -20,9 +20,12 @@
             <data_element id="3039" name="SIRET" usage="C" desc="" type="an" maxlength="17"/>
             <data_element id="1131" name="IDLCode" usage="C" desc="" type="an" maxlength="3"/>
         </composite_data_element>
+        <data_element id="000X" name="ghostData" usage="C" desc="" type="an" maxlength="2"/>
         <data_element id="3036" name="emmetName" usage="C" desc="" type="an" maxlength="35"/>
-        <data_element id="3042" name="streetnameFirstZone" usage="C" desc="" type="an" maxlength="35"/>
-        <data_element id="3042" name="streetnameSecondZone" usage="B" desc="" type="an" maxlength="35"/>
+        <composite_data_element id="_0003" name="streets" desc="">
+            <data_element id="3042" name="streetnameFirstZone" usage="C" desc="" type="an" maxlength="35"/>
+            <data_element id="3042" name="streetnameSecondZone" usage="B" desc="" type="an" maxlength="35"/>
+        </composite_data_element>
         <data_element id="3164" name="city" usage="C" desc="" type="an" maxlength="35"/>
         <data_element id="3251" name="zipcode" usage="C" desc="" type="an" maxlength="9"/>
         <data_element id="3207" name="country" usage="C" desc="" type="an" maxlength="2"/>
