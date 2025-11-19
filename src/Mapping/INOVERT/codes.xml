@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <data_elements>
     <data_element id="3035">
-        <code id="FW" title="Qualifiant de l'emetteur" desc="Commissionnaire de transport (apporteur)"/>
-        <code id="DP" title="Qualifiant de l'emetteur" desc="Agent livreur"/>
-        <code id="N1" title="Qualifiant de l'emetteur" desc="Intervenant 1 - destinataire en copie de la consignation"/>
-        <code id="N2" title="Qualifiant de l'emetteur" desc="Intervenant 2 - destinataire en copie de la consignation"/>
-        <code id="CN" title="Qualifiant de l'emetteur" desc="Destinataire"/>
-        <code id="CO" title="Qualifiant de l'emetteur" desc="Expéditeur/donneur d'ordre"/>
+        <code id="FW" title="Qualifiant" desc="Commissionnaire de transport (apporteur)"/>
+        <code id="DP" title="Qualifiant" desc="Agent livreur"/>
+        <code id="N1" title="Qualifiant" desc="Intervenant 1"/>
+        <code id="N2" title="Qualifiant" desc="Intervenant 2"/>
+        <code id="CN" title="Qualifiant" desc="Destinataire"/>
+        <code id="CO" title="Qualifiant" desc="Expéditeur/donneur d'ordre"/>
+        <code id="MS" title="Qualifiant" desc="Emetteur de la demande (Schenker)"/>
+        <code id="MR" title="Qualifiant" desc="Destinataire de la demande (Confrère)"/>
+        <code id="PW" title="Qualifiant" desc="Lieu d'enlèvement"/>
+        <code id="IC" title="Qualifiant" desc="Destinataire intermédiaire / Point relais"/>
     </data_element>
     <data_element id="2005">
-        <code id="DEP" title="Date de départ" desc="Date de départ "/>
-        <code id="AAR" title="Date d’arrivée" desc="Date prévisionnelle d’arrivée du camion"/>
-        <code id="DAD" title="Date de livraison demandée" desc="Date de livraison demandée"/>
-        <code id="DFD" title="Début de période pour la livraison" desc="Début de période pour la livraison"/>
-        <code id="DLD" title="Fin de période pour la livraison" desc="Fin de période pour la livraison"/>
-        <code id="DES" title="Date d'expédition" desc="Date d'expédition"/>
+        <code id="DEP" title="Date" desc="Date de départ"/>
+        <code id="AAR" title="Date" desc="Date d’arrivée"/>
+        <code id="DAD" title="Date" desc="Date de livraison demandée"/>
+        <code id="DFD" title="Date" desc="Début de période pour la livraison"/>
+        <code id="DLD" title="Date" desc="Fin de période pour la livraison"/>
+        <code id="DES" title="Date" desc="Date d'expédition"/>
+        <code id="BOD" title="Date" desc="Date de l'ordre d'enlèvement"/>
+        <code id="EDD" title="Date" desc="Date d'enlèvement demandée"/>
+        <code id="EFD" title="Date" desc="Début de période pour l'enlèvement"/>
+        <code id="ELD" title="Date" desc="Fin de période pour l'enlèvement"/>
     </data_element>
     <data_element id="3759">
-        <code id="D" title="Type de prestation" desc="A livrer"/>
-        <code id="K" title="Type de prestation" desc="A conserver à disposition"/>
-        <code id="I" title="Type de prestation" desc="A installer"/>
+        <code id="D" title="Prestation" desc="A livrer"/>
+        <code id="K" title="Prestation" desc="A conserver à disposition"/>
+        <code id="I" title="Prestation" desc="A installer"/>
+        <code id="E" title="Prestation" desc="A échanger"/>
+        <code id="P" title="Destinataire" desc="Particulier"/>
     </data_element>
     <data_element id="4219">
         <code id="1" title="Régime" desc="Express"/>
@@ -32,58 +42,65 @@
         <code id="F" title="Port" desc="En service"/>
     </data_element>
     <data_element id="5851">
-        <code id="E" title="Exemption de TVA" desc="Exemption"/>
-        <code id="V" title="Exemption de TVA" desc="Taxable"/>
+        <code id="E" title="TVA" desc="Exemption"/>
+        <code id="V" title="TVA" desc="Taxable"/>
     </data_element>
     <data_element id="8067">
-        <code id="3" title="Mode de transport" desc="Route"/>
+        <code id="3" title="Transport" desc="Route"/>
     </data_element>
     <data_element id="7065">
-        <code id="21" title="Spécifiant du nombre" desc="Colis"/>
-        <code id="23" title="Spécifiant du nombre" desc="Unité de manutention"/>
-        <code id="99" title="Spécifiant du nombre" desc="Equipement consigné"/>
-        <code id="98" title="Spécifiant du nombre" desc="Nombre inconnu"/>
+        <code id="21" title="Specifiant" desc="Colis"/>
+        <code id="23" title="Specifiant" desc="Unité de manutention"/>
+        <code id="99" title="Specifiant" desc="Equipement consigné"/>
+        <code id="98" title="Specifiant" desc="Nombre inconnu"/>
     </data_element>
     <data_element id="6799">
-        <code id="CGW" title="Qualifiant de la mesure" desc="Poids brut de la consignation"/>
-        <code id="CGM" title="Qualifiant de la mesure" desc="Volume de la consignation"/>
-        <code id="AAW" title="Qualifiant de la mesure" desc="Volume d'alcool"/>
-        <code id="ABQ" title="Qualifiant de la mesure" desc="Volume d'alcool pur"/>
-        <code id="AAD" title="Qualifiant de la mesure" desc="Poids brut total"/>
-        <code id="AAC" title="Qualifiant de la mesure" desc="Quantité nette totale"/>
-        <code id="EQ" title="Qualifiant de la mesure" desc="Quantité Exceptée"/>
-        <code id="LQ" title="Qualifiant de la mesure" desc="Quantité Limitée"/>
+        <code id="CGW" title="Mesure" desc="Poids brut"/>
+        <code id="CGM" title="Mesure" desc="Volume"/>
+        <code id="AAW" title="Mesure" desc="Volume d'alcool"/>
+        <code id="ABQ" title="Mesure" desc="Volume d'alcool pur"/>
+        <code id="AAD" title="Mesure" desc="Poids brut total"/>
+        <code id="AAC" title="Mesure" desc="Quantité nette totale"/>
+        <code id="EQ" title="Mesure" desc="Quantité Exceptée"/>
+        <code id="LQ" title="Mesure" desc="Quantité Limitée"/>
+        <code id="ENK" title="Mesure" desc="Poids inconnu"/>
     </data_element>
     <data_element id="6410">
-        <code id="KG" title="Spécifiant de l'unité de mesure" desc="Kg"/>
-        <code id="MTQ" title="Spécifiant de l'unité de mesure" desc="Mètre cube"/>
-        <code id="LTR" title="Spécifiant de l'unité de mesure" desc="Litre"/>
-        <code id="CTL" title="Spécifiant de l'unité de mesure" desc="Centilitre"/>
+        <code id="KG" title="Unité" desc="Kg"/>
+        <code id="MTQ" title="Unité" desc="Mètre cube"/>
+        <code id="LTR" title="Unité" desc="Litre"/>
+        <code id="CTL" title="Unité" desc="Centilitre"/>
+        <code id="KGM" title="Unité" desc="Kilogramme (ISO)"/>
     </data_element>
     <data_element id="3227">
-        <code id="PDO" title="Qualifiant d'une localisation" desc="Lieu de livraison"/>
-        <code id="COP" title="Qualifiant d'une localisation" desc="Lieu de chargement"/>
+        <code id="PDO" title="Localisation" desc="Lieu de livraison"/>
+        <code id="COP" title="Localisation" desc="Lieu de chargement"/>
     </data_element>
     <data_element id="0077">
-        <code id="DEL" title="Référence du texte" desc="Instruction de livraison à imprimer sur le document de livraison"/>
-        <code id="REM" title="Référence du texte" desc="Remarques"/>
-        <code id="AAD" title="Référence du texte" desc="Nom technique"/>
-        <code id="AAC" title="Référence du texte" desc="Information complémentaire"/>
-        <code id="REG" title="Référence du texte" desc="Tunnel"/>
-        <code id="PKG" title="Référence du texte" desc="Type de conditionnement"/>
-        <code id="ACF" title="Référence du texte" desc="Déchet"/>
+        <code id="DEL" title="Texte" desc="Instruction de livraison"/>
+        <code id="REM" title="Texte" desc="Remarques"/>
+        <code id="AAD" title="Texte" desc="Nom technique"/>
+        <code id="AAC" title="Texte" desc="Information complémentaire"/>
+        <code id="REG" title="Texte" desc="Tunnel"/>
+        <code id="PKG" title="Texte" desc="Type de conditionnement"/>
+        <code id="ACF" title="Texte" desc="Déchet"/>
+        <code id="TRA" title="Texte" desc="Instructions d'enlèvement"/>
     </data_element>
     <data_element id="8724">
-        <code id="1" title="Groupe d'emballage" desc="Très dangereux"/>
-        <code id="2" title="Groupe d'emballage" desc="Moyennement dangereux"/>
-        <code id="3" title="Groupe d'emballage" desc="Peu dangereux"/>
+        <code id="1" title="Danger" desc="Très dangereux"/>
+        <code id="2" title="Danger" desc="Moyennement dangereux"/>
+        <code id="3" title="Danger" desc="Peu dangereux"/>
     </data_element>
     <data_element id="8719">
-        <code id="DE" title="Autorisation de transporter" desc="Polluant Environnement"/>
-        <code id="MP" title="Autorisation de transporter" desc="Polluant Marin"/>
+        <code id="DE" title="Autorisation" desc="Polluant Environnement"/>
+        <code id="MP" title="Autorisation" desc="Polluant Marin"/>
     </data_element>
     <data_element id="3155">
-        <code id="FT" title="Qualifiant du numéro de communication" desc="Adresse de l'URL de l'image"/>
-        <code id="TT" title="Qualifiant du numéro de communication" desc="La ligne de texte à imprimer"/>
+        <code id="FT" title="Communication" desc="URL image"/>
+        <code id="TT" title="Communication" desc="Texte à imprimer"/>
+    </data_element>
+    <data_element id="1153">
+        <code id="CN" title="Reference" desc="Ref Commissionnaire"/>
+        <code id="SEN" title="Reference" desc="Ref Expéditeur"/>
     </data_element>
 </data_elements>

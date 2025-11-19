@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<message>
+    <segment id="UNH" maxrepeat="1" required="true"/>
+    <segment id="BGM" maxrepeat="1" required="true"/>
+    <group id="GR1" maxrepeat="4" required="true">
+        <segment id="NAD" maxrepeat="1" required="true"/>
+        <segment id="DTM" maxrepeat="2"/>
+    </group>
+    <segment id="TSR" maxrepeat="1"/>
+    <segment id="CAG" maxrepeat="1"/>
+    <group id="GR3" maxrepeat="1">
+        <segment id="TDT" maxrepeat="1" required="true"/>
+        <group id="GR4" maxrepeat="1">
+            <segment id="DOC" maxrepeat="1" required="true"/>
+        </group>
+        <group id="GR5" maxrepeat="9">
+            <segment id="EQD" maxrepeat="1" required="true"/>
+            <segment id="SEL" maxrepeat="1"/>
+        </group>
+    </group>
+    <segment id="UNS" maxrepeat="1" required="true"/>
+    <group id="GR7" maxrepeat="9999" required="true">
+        <segment id="RFF" maxrepeat="1" required="true"/>
+        <segment id="GID" maxrepeat="1" required="true"/>
+        <segment id="MSE" maxrepeat="4" required="true"/>
+        <group id="GR8" maxrepeat="4" required="true">
+            <segment id="NAD" maxrepeat="1" required="true"/>
+            <segment id="CTA" maxrepeat="1"/>
+            <segment id="LOC" maxrepeat="1"/>
+            <segment id="DTM" maxrepeat="4"/>
+        </group>
+        <segment id="CAG" maxrepeat="1"/>
+        <segment id="VAL" maxrepeat="99"/>
+        <segment id="TSR" maxrepeat="1"/>
+        <segment id="TXT" maxrepeat="9"/>
+        <group id="GR9" maxrepeat="99">
+            <segment id="GDS" maxrepeat="1" required="true"/>
+            <segment id="DGS" maxrepeat="1"/>
+            <segment id="TXT" maxrepeat="9"/>
+            <segment id="MSE" maxrepeat="2"/>
+            <segment id="GID" maxrepeat="1"/>
+        </group>
+        <group id="GR10" maxrepeat="9999">
+            <segment id="PCI" maxrepeat="1" required="true"/>
+            <segment id="MSE" maxrepeat="3"/>
+            <segment id="GID" maxrepeat="1"/>
+            <segment id="GIN" maxrepeat="9999"/>
+        </group>
+        <group id="GR12" maxrepeat="9">
+            <segment id="DOC" maxrepeat="1" required="true"/>
+            <segment id="COM" maxrepeat="999"/>
+            <segment id="DTM" maxrepeat="1"/>
+        </group>
+    </group>
+    <segment id="UNS" maxrepeat="1" required="true"/>
+    <segment id="UNT" maxrepeat="1" required="true"/>
+</message>
