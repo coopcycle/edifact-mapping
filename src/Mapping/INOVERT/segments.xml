@@ -60,6 +60,7 @@
         <data_element id="9759" name="govReq" desc="Exigences" usage="B" type="an" maxlength="7"/>
         <data_element id="5854" name="taxUnit" desc="Unité taxation" usage="B" type="an" maxlength="17"/>
         <data_element id="6170" name="taxUnitCount" desc="Nb unités taxables" usage="B" type="n" maxlength="9"/>
+        <data_element id="1850" name="taxAttribution" desc="Attribution de la taxe de transport" usage="B" type="an" maxlength="17"/>
     </segment>
 
     <segment id="TDT" name="transportType" desc="Mode de transport">
