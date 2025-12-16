@@ -118,7 +118,7 @@
         </composite_data_element>
     </segment>
     <segment id="CTA" name="communicationMeans" desc="Communication">
-        <data_element id="3139" name="funcCode" desc="Fonction code" usage="B" type="an" maxlength="3"/> <data_element id="3412" name="contactType" desc="Service" usage="B" type="an" maxlength="35"/>
+        <data_element id="3412" name="contactType" desc="Service" usage="B" type="an" maxlength="35"/>
         <data_element id="3148" name="contact" desc="N°" usage="B" type="an" maxlength="512"/>
         <data_element id="3153" name="channel" desc="Mode" usage="B" type="an" maxlength="3"/>
     </segment>
