@@ -30,7 +30,6 @@
             <data_element id="3042" name="streetnameSecondZone" usage="B" desc="" type="an" maxlength="35"/>
         </composite_data_element>
         <data_element id="3164" name="city" usage="C" desc="" type="an" maxlength="35"/>
-        <data_element id="3229" name="region" usage="C" desc="Code région" type="an" maxlength="9"/>
         <data_element id="3251" name="zipcode" usage="C" desc="" type="an" maxlength="9"/>
         <data_element id="3207" name="country" usage="C" desc="" type="an" maxlength="2"/>
     </segment>
