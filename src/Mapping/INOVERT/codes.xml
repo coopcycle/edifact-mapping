@@ -103,4 +103,7 @@
         <code id="CN" title="Reference" desc="Ref Commissionnaire"/>
         <code id="SEN" title="Reference" desc="Ref Expéditeur"/>
     </data_element>
+    <data_element id="3035">
+        <code id="OS" title="Qualifiant" desc="Order Shipper"/>
+    </data_element>
 </data_elements>
